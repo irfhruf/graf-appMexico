@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mes patrio | Bandera de México</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="card" role="main">
+            <header>
+                <h1>Mes patrio</h1>
+                <p>Bandera de México</p>
+            </header>
+
+            <div class="controls-top">
+                <div class="group">
+                    <label>Color verde <input type="color" id="greenPicker" value="#008000"></label>
+                    <label>Intensidad verde <input type="range" id="greenRange" min="0" max="255" value="0"></label>
+                </div>
+                <div class="group">
+                    <label>Color rojo <input type="color" id="redPicker" value="#800000"></label>
+                    <label>Intensidad roja <input type="range" id="redRange" min="0" max="255" value="0"></label>
+                </div>
+            </div>
+
+            <section class="flag" aria-label="Bandera de México">
+                <div class="stripe green">
+                    <div class="label">Esperanza</div>
+                    <div class="color-code" id="greenCode">#008000</div>
+                </div>
+                <div class="stripe white">
+                    <div class="label">Unidad</div>
+                    <div class="color-code">#FFFFFF</div>
+                </div>
+                <div class="stripe red">
+                    <div class="label">Sangre de nuestros héroes nacionales</div>
+                    <div class="color-code" id="redCode">#800000</div>
+                </div>
+            </section>
+
+            <div class="note">
+                <span><b>Nombre:&nbsp;</b>Luis Gabriel Garcia Vera</span>
+                <span>&nbsp;|&nbsp;</span>
+                <span><b>Numero de control:&nbsp;</b>23200839</span>
+            </div>
+
+            <footer>
+                Los controles para ajustar color e intensidad ahora cambian directamente el color de las franjas verde y
+                roja.
+            </footer>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+
+</html>

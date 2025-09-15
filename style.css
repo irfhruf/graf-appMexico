@@ -1,0 +1,149 @@
+:root {
+    --green: #008000;
+    --white: #ffffff;
+    --red: #800000;
+    --bg: #f7f7f7;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: #111
+}
+
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 32px
+}
+
+.card {
+    width: min(980px, 96vw);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #eee
+}
+
+header h1 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.6px
+}
+
+header p {
+    margin: 6px 0 0;
+    color: #666
+}
+
+.controls-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 12px 24px;
+    border-bottom: 1px solid #eee;
+    gap: 16px
+}
+
+.controls-top .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px
+}
+
+.controls-top label {
+    font-size: 13px;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px
+}
+
+.controls-top input[type="range"] {
+    width: 120px
+}
+
+.flag {
+    display: flex;
+    height: 420px;
+    min-height: 280px
+}
+
+.stripe {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px;
+    color: var(--white)
+}
+
+.stripe.white {
+    background: var(--white);
+    color: #111
+}
+
+.stripe.green {
+    background: var(--green)
+}
+
+.stripe.red {
+    background: var(--red)
+}
+
+.color-code {
+    margin-top: 8px;
+    font-family: monospace;
+    font-size: 13px;
+    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px 6px;
+    border-radius: 4px
+}
+
+.label {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center
+}
+
+.note {
+    padding: 18px 24px;
+    border-top: 1px solid #eee;
+    background: #fafafa;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.45
+}
+
+@media (max-width:700px) {
+    .flag {
+        flex-direction: column;
+        height: auto
+    }
+
+    .stripe {
+        padding: 28px
+    }
+}
+
+footer {
+    padding: 14px 18px;
+    text-align: center;
+    color: #666;
+    font-size: 13px
+}
